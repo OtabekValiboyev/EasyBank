@@ -1,3 +1,40 @@
+/* CUSTOM PROPS */
+:root {
+  --gradient: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  --green: #30C88f;
+  --black: #2d314d;
+  --gray: #9597a5;
+  --font: "Public Sans", "Arial", sans-serif;
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../font/PublicSans-Regular.woff2') format('woff2'),
+  url('../font/PublicSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../font/PublicSans-Thin.woff2') format('woff2'),
+  url('../font/PublicSans-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../font/PublicSans-Medium.woff2') format('woff2'),
+  url('../font/PublicSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   height: 100%;
   box-sizing: border-box;
@@ -16,16 +53,20 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  font-family: var(--font);
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.25px;
   font-size: 16px;
   background-color: #fff;
-  color: #222;
+  color: var(--gray);
 }
 
 .container {
   max-width: 100%;
-  width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  width: 1160px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin-left: auto;
   margin-right: auto;
 }
