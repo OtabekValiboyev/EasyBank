@@ -368,9 +368,11 @@ img {
   letter-spacing: -0.156px;
 }
 
-.article__title {
+.article__title-link{
   margin-top: 0;
   margin-bottom: 8px;
+  display: inline-block;
+  text-decoration: none;
   max-width: 207px;
   color: var(--black);
   font-size: 16px;
@@ -378,6 +380,16 @@ img {
   font-weight: 100;
   line-height: 20px;
   letter-spacing: -0.286px;
+  transition: color 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.article__title-link:hover {
+  color: var(--green);
+}
+
+.article__title-link:active {
+  opacity: 0.6;
 }
 
 .article__description {
