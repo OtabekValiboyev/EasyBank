@@ -412,18 +412,19 @@ img {
 
 .footer__container {
   display: flex;
-  align-items: flex-start;
 }
 
 .footer__logo-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
   margin-right: 131px;
 }
 
 .footer__logo {
-  margin-bottom: 55px;
+  margin-bottom: 24px;
 }
-
-.footer__socials {}
 
 .socials {
   margin: 0;
@@ -492,10 +493,10 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 .footer__info-text {
-  margin-top: 24px;
   margin-bottom: 0;
   color: #fff;
   text-align: right;
