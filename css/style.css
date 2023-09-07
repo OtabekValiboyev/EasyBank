@@ -349,12 +349,12 @@ img {
 .article__img {
   width: 255px;
   height: 200px;
+  object-fit: cover;
+  display: block;
 }
 
 .article__inner {
-  padding-top: 25px;
-  padding-left: 24px;
-  padding-bottom: 24px;
+  padding: 24px;
 }
 
 .article__name {
